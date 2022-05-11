@@ -1,0 +1,22 @@
+import buildsrc.Libraries
+import buildsrc.TestLibraries
+
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    defaultConfig {
+        testInstrumentationRunner = "com.dotslashlabs.demo.runner.HiltTestRunner"
+    }
+}
+
+dependencies {
+    implementation(project(path: ":data"))
+
+    implementation Libraries.Compose.activityCompose
+    implementation Libraries.Compose.navigationCompose
+
+    // Espresso dependencies
+    androidTestImplementation TestLibraries.Espresso.espressoCore
+}
