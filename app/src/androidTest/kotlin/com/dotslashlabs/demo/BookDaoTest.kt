@@ -1,6 +1,5 @@
 package com.dotslashlabs.demo
 
-import com.dotslashlabs.demo.data.BookCategory
 import com.dotslashlabs.demo.data.dao.BookDao
 import com.dotslashlabs.demo.data.entity.Book
 import dagger.hilt.android.testing.HiltAndroidTest
