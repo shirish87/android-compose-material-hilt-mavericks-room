@@ -93,7 +93,7 @@ fun JavaCompile.configure(extension: AutoConfigBuildPluginExtension) {
 }
 
 fun DefaultJavaPluginExtension.configure(
-    plugin: Plugin<*>,
+    @Suppress("UNUSED_PARAMETER") plugin: Plugin<*>,
     extension: AutoConfigBuildPluginExtension,
 ) {
     val javaVersion = JavaVersion.valueOf("VERSION_${extension.javaVersion.get()}")
