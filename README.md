@@ -64,36 +64,23 @@ task clean(type: Delete) {
 ### App Module
 
 ```
-import buildsrc.Libraries
-import buildsrc.TestLibraries
-
 plugins {
     id 'com.android.application'
 }
 
 dependencies {
-    implementation Libraries.Compose.activityCompose
-    implementation Libraries.Compose.navigationCompose
-
-    androidTestImplementation TestLibraries.Espresso.espressoCore
+    // App dependencies
 }
 ```
 
 
 ### Library Modules
 ```
-import buildsrc.Libraries
-
 plugins {
     id 'com.android.library'
 }
 
 dependencies {
-    api Libraries.JavaX.javaXInject
-
-    kapt Libraries.Room.AnnotationProcessor.roomCompiler
-    api Libraries.Room.roomRuntime
-    implementation Libraries.Room.room
-    implementation Libraries.Room.roomPaging
+    // Library dependencies
 }
 ```

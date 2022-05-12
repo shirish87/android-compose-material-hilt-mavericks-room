@@ -1,5 +1,4 @@
-import buildsrc.Libraries
-import buildsrc.TestLibraries
+import buildsrc.*
 
 plugins {
     id 'com.android.application'
@@ -13,9 +12,6 @@ android {
 
 dependencies {
     implementation(project(path: ":data"))
-
-    implementation Libraries.Compose.activityCompose
-    implementation Libraries.Compose.navigationCompose
 
     // Espresso dependencies
     androidTestImplementation TestLibraries.Espresso.espressoCore

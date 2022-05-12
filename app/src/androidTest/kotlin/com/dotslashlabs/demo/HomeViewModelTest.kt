@@ -6,11 +6,11 @@ import com.dotslashlabs.demo.data.repository.BookRepository
 import com.dotslashlabs.demo.ui.screen.home.HomeViewModel
 import com.dotslashlabs.demo.ui.screen.home.HomeViewState
 import dagger.hilt.android.testing.HiltAndroidTest
+import javax.inject.Inject
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.runBlocking
 import org.junit.Assert.assertEquals
 import org.junit.Test
-import javax.inject.Inject
 
 @HiltAndroidTest
 class HomeViewModelTest : BaseTest() {
